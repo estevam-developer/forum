@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import br.com.estevam.forum.repository.UsuarioRepository;
 
 @Service
-public class AutenticacaoService implements UserDetailsService {
+public class LoadUserService implements UserDetailsService {
 
 	@Autowired
 	private UsuarioRepository usuarioRepository; 
@@ -21,7 +21,7 @@ public class AutenticacaoService implements UserDetailsService {
 		
 		if (result.isEmpty())
 			throw new UsernameNotFoundException("Username Not Found");
-		System.out.println(result.get().getNome());
+
 		return result.get();
 	}
 
