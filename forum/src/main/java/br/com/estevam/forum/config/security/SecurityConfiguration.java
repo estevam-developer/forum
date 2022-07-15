@@ -35,6 +35,7 @@ public class SecurityConfiguration {
 					.authorizeHttpRequests()
 					.antMatchers(HttpMethod.GET ,"/topicos/**").permitAll()
 					.antMatchers(HttpMethod.POST ,"/auth").permitAll()
+					.antMatchers(HttpMethod.DELETE ,"/topicos/*").hasRole("MODERADOR")
 					.anyRequest().authenticated()
 				.and()
 					.csrf().disable()
