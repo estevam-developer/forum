@@ -1,8 +1,8 @@
 INSERT INTO USUARIO(nome, email, senha) VALUES('Aluno', 'aluno@email.com', '{bcrypt}$2a$10$YZgS5aHKvO9oIhyJ6I5N8.5cKKSF6BoEAYlZ7JeULnu66Shv28rvK');
 INSERT INTO USUARIO(nome, email, senha) VALUES('Moderador', 'moderador@email.com', '{bcrypt}$2a$10$YZgS5aHKvO9oIhyJ6I5N8.5cKKSF6BoEAYlZ7JeULnu66Shv28rvK');
 
-INSERT INTO PERFIL(nome) VALUES("ROLE_ALUNO");
-INSERT INTO PERFIL(nome) VALUES("ROLE_MODERADOR");
+INSERT INTO PERFIL(nome) VALUES('ROLE_ALUNO');
+INSERT INTO PERFIL(nome) VALUES('ROLE_MODERADOR');
 
 INSERT INTO USUARIO_PERFIL(usuario_id, perfil_id) VALUES(1, 1);
 INSERT INTO USUARIO_PERFIL(usuario_id, perfil_id) VALUES(2, 2);
